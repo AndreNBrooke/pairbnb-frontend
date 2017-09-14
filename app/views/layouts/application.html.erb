@@ -12,16 +12,37 @@
 
 <%= render partial: "layouts/navbar" %>
 <div class="container">
+<button type="button" class="jumbotron" class="btn-block" data-toggle="modal" data-target="#myModal">Press me</button>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
   <%= yield %>
 </div>
 <div class="pusher"></div>
-<div id="footer">
-  <ul>
-    <li>About Us</li>
-    <li>Privacy</li>
-    <li>Terms</li>
-    <li>Contact Us</li>
-    <li>Signup for newsletter</li>
+<div id="footer" >
+  <ul >
+    <li class="pull-right" class="col-xs-3">About Us</li>
+    <li class="pull-left" class="col-xs-3">Privacy</li>
+    <li class="pull-right" class="col-xs-3">Terms</li>
+    <li class="pull-left" class="col-xs-3">Contact Us</li>
+    <li class="col-xs-3">Signup for newsletter</li>
   </ul>
 </div>
 
