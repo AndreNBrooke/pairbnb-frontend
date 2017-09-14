@@ -31,6 +31,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+
 .hero-header {
   text-align: center;
   height: 500px;
@@ -133,6 +134,20 @@ body {
 .menu a:hover, .menu .current-item a {
   text-decoration:none;
   color:#303030;
+}
+
+@media screen and (max-width: 400px) {
+  .menu li {
+  font-size: 10px;
+  }
+
+  .para-one {
+  width: 100%;
+  }
+
+  .para-two {
+  width: 100%
+  }
 }
 
 #footer {
